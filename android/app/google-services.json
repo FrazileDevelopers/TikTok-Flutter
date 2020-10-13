@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "158488546702",
+    "firebase_url": "https://tiktoktest-78424.firebaseio.com",
+    "project_id": "tiktoktest-78424",
+    "storage_bucket": "tiktoktest-78424.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158488546702:android:050eddaac7ff3e5f6828df",
+        "android_client_info": {
+          "package_name": "com.example.tiktok_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158488546702-imssfueui6ue66d6frcvefnl61acnu9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS7zEOpo3eok4Zz1wX39LiNDu0LK-vH0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158488546702-imssfueui6ue66d6frcvefnl61acnu9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
