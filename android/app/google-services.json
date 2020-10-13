@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:158488546702:android:050eddaac7ff3e5f6828df",
+        "mobilesdk_app_id": "1:158488546702:android:9012fb4bf4f866d26828df",
         "android_client_info": {
-          "package_name": "com.example.tiktok_flutter"
+          "package_name": "com.fz.fikfok"
         }
       },
       "oauth_client": [
