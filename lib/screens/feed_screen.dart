@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -23,12 +25,19 @@ class FeedScreen extends StatefulWidget {
 class _FeedScreenState extends State<FeedScreen> {
   final locator = GetIt.instance;
   final feedViewModel = GetIt.instance<FeedViewModel>();
+
   @override
   void initState() {
-    feedViewModel.loadVideo(0);
-    feedViewModel.loadVideo(1);
-
-    super.initState();
+    // feedViewModel.loadVideo(0);
+    // feedViewModel.loadVideo(1);
+    Timer(Duration(seconds: 10), () =>
+        feedViewModel.loadVideo(0)
+    );
+    super
+    .
+    initState
+    (
+    );
   }
 
   @override
@@ -41,7 +50,9 @@ class _FeedScreenState extends State<FeedScreen> {
 
   Widget videoScreen() {
     return Scaffold(
-      backgroundColor: GetIt.instance<FeedViewModel>().actualScreen == 0
+      backgroundColor: GetIt
+          .instance<FeedViewModel>()
+          .actualScreen == 0
           ? Colors.black
           : Colors.white,
       body: Stack(
@@ -78,7 +89,7 @@ class _FeedScreenState extends State<FeedScreen> {
                 Container(
                   decoration: BoxDecoration(
                       border:
-                          Border(bottom: BorderSide(color: Colors.black12))),
+                      Border(bottom: BorderSide(color: Colors.black12))),
                   padding: EdgeInsets.symmetric(vertical: 12, horizontal: 20),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -104,7 +115,7 @@ class _FeedScreenState extends State<FeedScreen> {
                         ClipOval(
                           child: CachedNetworkImage(
                             imageUrl:
-                                "https://www.andersonsobelcosmetic.com/wp-content/uploads/2018/09/chin-implant-vs-fillers-best-for-improving-profile-bellevue-washington-chin-surgery.jpg",
+                            "https://www.andersonsobelcosmetic.com/wp-content/uploads/2018/09/chin-implant-vs-fillers-best-for-improving-profile-bellevue-washington-chin-surgery.jpg",
                             height: 100.0,
                             width: 100.0,
                             placeholder: (context, url) =>
@@ -121,7 +132,7 @@ class _FeedScreenState extends State<FeedScreen> {
                     Text(
                       "@Charlotte21",
                       style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+                      TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
                       height: 20,
@@ -295,11 +306,12 @@ class _FeedScreenState extends State<FeedScreen> {
                               child: CachedNetworkImage(
                                 fit: BoxFit.fill,
                                 imageUrl:
-                                    "https://media.giphy.com/media/tOueglJrk5rS8/giphy.gif",
-                                placeholder: (context, url) => Padding(
-                                  padding: const EdgeInsets.all(35.0),
-                                  child: CircularProgressIndicator(),
-                                ),
+                                "https://media.giphy.com/media/tOueglJrk5rS8/giphy.gif",
+                                placeholder: (context, url) =>
+                                    Padding(
+                                      padding: const EdgeInsets.all(35.0),
+                                      child: CircularProgressIndicator(),
+                                    ),
                                 errorWidget: (context, url, error) =>
                                     Icon(Icons.error),
                               ),
@@ -318,11 +330,12 @@ class _FeedScreenState extends State<FeedScreen> {
                               child: CachedNetworkImage(
                                 fit: BoxFit.fill,
                                 imageUrl:
-                                    "https://media.giphy.com/media/665IPY24jyWFa/giphy.gif",
-                                placeholder: (context, url) => Padding(
-                                  padding: const EdgeInsets.all(35.0),
-                                  child: CircularProgressIndicator(),
-                                ),
+                                "https://media.giphy.com/media/665IPY24jyWFa/giphy.gif",
+                                placeholder: (context, url) =>
+                                    Padding(
+                                      padding: const EdgeInsets.all(35.0),
+                                      child: CircularProgressIndicator(),
+                                    ),
                                 errorWidget: (context, url, error) =>
                                     Icon(Icons.error),
                               ),
@@ -341,11 +354,12 @@ class _FeedScreenState extends State<FeedScreen> {
                               child: CachedNetworkImage(
                                 fit: BoxFit.fill,
                                 imageUrl:
-                                    "https://media.giphy.com/media/chjX2ypYJKkr6/giphy.gif",
-                                placeholder: (context, url) => Padding(
-                                  padding: const EdgeInsets.all(35.0),
-                                  child: CircularProgressIndicator(),
-                                ),
+                                "https://media.giphy.com/media/chjX2ypYJKkr6/giphy.gif",
+                                placeholder: (context, url) =>
+                                    Padding(
+                                      padding: const EdgeInsets.all(35.0),
+                                      child: CircularProgressIndicator(),
+                                    ),
                                 errorWidget: (context, url, error) =>
                                     Icon(Icons.error),
                               ),
@@ -368,11 +382,12 @@ class _FeedScreenState extends State<FeedScreen> {
                               child: CachedNetworkImage(
                                 fit: BoxFit.fill,
                                 imageUrl:
-                                    "https://media.giphy.com/media/sC60eX0OVIH7O/giphy.gif",
-                                placeholder: (context, url) => Padding(
-                                  padding: const EdgeInsets.all(35.0),
-                                  child: CircularProgressIndicator(),
-                                ),
+                                "https://media.giphy.com/media/sC60eX0OVIH7O/giphy.gif",
+                                placeholder: (context, url) =>
+                                    Padding(
+                                      padding: const EdgeInsets.all(35.0),
+                                      child: CircularProgressIndicator(),
+                                    ),
                                 errorWidget: (context, url, error) =>
                                     Icon(Icons.error),
                               ),
@@ -391,11 +406,12 @@ class _FeedScreenState extends State<FeedScreen> {
                               child: CachedNetworkImage(
                                 fit: BoxFit.fill,
                                 imageUrl:
-                                    "https://media.giphy.com/media/NsXhybxnMKsh2/giphy.gif",
-                                placeholder: (context, url) => Padding(
-                                  padding: const EdgeInsets.all(35.0),
-                                  child: CircularProgressIndicator(),
-                                ),
+                                "https://media.giphy.com/media/NsXhybxnMKsh2/giphy.gif",
+                                placeholder: (context, url) =>
+                                    Padding(
+                                      padding: const EdgeInsets.all(35.0),
+                                      child: CircularProgressIndicator(),
+                                    ),
                                 errorWidget: (context, url, error) =>
                                     Icon(Icons.error),
                               ),
@@ -414,11 +430,12 @@ class _FeedScreenState extends State<FeedScreen> {
                               child: CachedNetworkImage(
                                 fit: BoxFit.fill,
                                 imageUrl:
-                                    "https://media.giphy.com/media/HE6hyf47yAX1S/giphy.gif",
-                                placeholder: (context, url) => Padding(
-                                  padding: const EdgeInsets.all(35.0),
-                                  child: CircularProgressIndicator(),
-                                ),
+                                "https://media.giphy.com/media/HE6hyf47yAX1S/giphy.gif",
+                                placeholder: (context, url) =>
+                                    Padding(
+                                      padding: const EdgeInsets.all(35.0),
+                                      child: CircularProgressIndicator(),
+                                    ),
                                 errorWidget: (context, url, error) =>
                                     Icon(Icons.error),
                               ),
@@ -518,29 +535,29 @@ class _FeedScreenState extends State<FeedScreen> {
       children: [
         video.controller != null
             ? GestureDetector(
-                onTap: () {
-                  if (video.controller.value.isPlaying) {
-                    video.controller.pause();
-                  } else {
-                    video.controller.play();
-                  }
-                },
-                child: SizedBox.expand(
-                    child: FittedBox(
-                  fit: BoxFit.cover,
-                  child: SizedBox(
-                    width: video.controller.value.size?.width ?? 0,
-                    height: video.controller.value.size?.height ?? 0,
-                    child: VideoPlayer(video.controller),
-                  ),
-                )),
-              )
-            : Container(
-                color: Colors.black,
-                child: Center(
-                  child: Text("Loadingd123"),
+          onTap: () {
+            if (video.controller.value.isPlaying) {
+              video.controller.pause();
+            } else {
+              video.controller.play();
+            }
+          },
+          child: SizedBox.expand(
+              child: FittedBox(
+                fit: BoxFit.cover,
+                child: SizedBox(
+                  width: video.controller.value.size?.width ?? 0,
+                  height: video.controller.value.size?.height ?? 0,
+                  child: VideoPlayer(video.controller),
                 ),
-              ),
+              )),
+        )
+            : Container(
+          color: Colors.black,
+          child: Center(
+            child: Text("Loadingd123"),
+          ),
+        ),
         Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
